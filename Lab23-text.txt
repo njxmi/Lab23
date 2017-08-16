@@ -1,0 +1,50 @@
+For Lab 23
+
+1. 	select * from customers
+
+2. 	select country from customers
+
+	Or, if you don't want to see any repeats:
+	select distinct country from customers
+
+3. 	select * from customers where customerid like 'BL%'
+
+4. 	select * from orders
+	limit 100
+
+5. 	select * from customers where PostalCode='1010' or PostalCode='3012' or PostalCode='12209' or 		
+	PostalCode='05023'
+
+
+
+6. 	select * from orders where ShipRegion is not null
+
+7. 	select * from customers
+	order by country, city
+
+8.	insert into customers(customerid, companyname, City, Country) values ('newID', 'NewCo','Tokyo', 'Japan')
+
+9.	update orders set ShipRegion='EuroZone' where ShipCountry='France'
+
+10.	delete from order_details where Quantity='1'
+
+11.	If running each line individually:
+	select avg(quantity) from order_details
+	select max(quantity) from order_details
+	select min(quantity) from order_details
+
+12. select avg(quantity) from order_details
+	group by OrderID
+	
+	select max(quantity) from order_details
+	group by OrderID
+	
+	select min(quantity) from order_details
+	group by OrderID
+
+13.	select CustomerID from orders where OrderID='10290'
+
+---
+14.
+15.
+16.
